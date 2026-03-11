@@ -10,7 +10,7 @@ A command-driven resume and cover letter tailoring skill. It uses `SKILL.md` for
 
 ## Commands
 
-- `kickoff`: capture baseline profile and master resume.
+- `begin`: capture baseline profile and master resume.
 - `ingest jd`: parse a job description into structured requirements.
 - `tailor resume`: produce a JD-aligned resume variant with rationale and ATS pass.
 - `tailor cover`: draft a JD-aligned cover letter backed by resume evidence.

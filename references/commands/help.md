@@ -6,7 +6,7 @@ Show available commands and brief usage.
 
 ## Output Blueprint
 
-- kickoff: Onboard and capture baseline resume data.
+- begin: Onboard and capture baseline resume data.
 - ingest jd: Parse a job description into structured requirements.
 - tailor resume: Produce a JD-aligned resume variant with rationale.
 - tailor cover: Draft a JD-aligned cover letter backed by resume evidence.
@@ -18,7 +18,7 @@ Show available commands and brief usage.
 ## Example Output
 
 Commands:
-- kickoff
+- begin
 - ingest jd
 - tailor resume
 - tailor cover

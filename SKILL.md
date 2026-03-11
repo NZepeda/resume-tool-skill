@@ -21,8 +21,8 @@ This skill maintains continuity using `resume_state.md`.
 At the beginning of each session:
 
 1. Read `resume_state.md` if it exists.
-2. If it exists, proceed directly to the user’s command (do not re-run kickoff).
-3. If it does not exist and the user did not issue a command, recommend `kickoff`.
+2. If it exists, proceed directly to the user’s command (do not re-run begin).
+3. If it does not exist and the user did not issue a command, recommend `begin`.
 4. If it does not exist but the user issued a command, execute the command directly and request missing data.
 
 ### Session End Protocol
@@ -42,7 +42,7 @@ When reading `resume_state.md`, ensure the schema matches `references/cross-cutt
 Normalize user input (lowercase, trim, collapse internal whitespace). Read the first command phrase and route to the matching workflow.
 
 Supported commands (exact phrases):
-- kickoff
+- begin
 - ingest jd
 - tailor resume
 - tailor cover

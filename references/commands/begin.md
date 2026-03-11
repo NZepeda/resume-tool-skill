@@ -1,4 +1,4 @@
-# Command: kickoff
+# Command: begin
 
 ## Purpose
 

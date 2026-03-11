@@ -26,9 +26,9 @@ This skill maintains continuity across sessions using a persistent `resume_state
 
 At the beginning of every session:
 1. Read `resume_state.md` if it exists.
-2. **If it exists**: Greet with context: "Welcome back. Last session we worked on [X]. Which command do you want to run next?" Do NOT re-run kickoff.
-3. **If it doesn't exist and the user hasn't already issued a command**: Treat as a new user. Suggest `kickoff`.
-4. **If it doesn't exist but the user has already issued a command** (e.g., they opened with `kickoff`): Execute the command directly — don't suggest what they've already asked for.
+2. **If it exists**: Greet with context: "Welcome back. Last session we worked on [X]. Which command do you want to run next?" Do NOT re-run begin.
+3. **If it doesn't exist and the user hasn't already issued a command**: Treat as a new user. Suggest `begin`.
+4. **If it doesn't exist but the user has already issued a command** (e.g., they opened with `begin`): Execute the command directly — don't suggest what they've already asked for.
 
 ### Session End Protocol
 
@@ -98,7 +98,7 @@ Last updated: [date]
 ### State Update Triggers
 
 Write to `resume_state.md` whenever:
-- `kickoff` creates or updates Profile and Master Resume.
+- `begin` creates or updates Profile and Master Resume.
 - `ingest jd` adds a new Target Roles Library entry.
 - `tailor resume` or `tailor cover` adds a Tailored Versions entry and updates ATS Risk Log if needed.
 - `score` identifies ATS or recruiter risks (log to ATS Risk Log).
@@ -116,7 +116,7 @@ Write to `resume_state.md` whenever:
 5. **Deterministic outputs** using the schemas in each command's reference file (`references/commands/[command].md`).
 6. **End every workflow with next command suggestions**.
 7. **Triage, don't just report**. After mapping and scoring, branch based on the largest risk or gap.
-8. **Surface the help command at key moments**. Users will forget commands. Remind them after kickoff, after first tailor/score, or when they seem unsure.
+8. **Surface the help command at key moments**. Users will forget commands. Remind them after begin, after first tailor/score, or when they seem unsure.
 
 ## Command Registry
 
@@ -124,7 +124,7 @@ Execute commands immediately when detected. Before executing, read the reference
 
 | Command | Purpose |
 |---|---|
-| `kickoff` | Initialize resume profile and master resume |
+| `begin` | Initialize resume profile and master resume |
 | `ingest jd` | Parse a job description into structured requirements |
 | `tailor resume` | Produce a JD-aligned resume variant |
 | `tailor cover` | Draft a JD-aligned cover letter |

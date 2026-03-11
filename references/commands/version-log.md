@@ -40,4 +40,4 @@ Recent Summary:
 
 ## Missing Inputs
 
-- "I can't find `resume_state.md`. Run `kickoff` first or provide the file."
+- "I can't find `resume_state.md`. Run `begin` first or provide the file."

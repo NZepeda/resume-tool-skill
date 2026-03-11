@@ -21,7 +21,7 @@ This document captures the implementation plan for a resume and cover letter tai
 
 Proposed commands for the tool:
 
-1. `kickoff` for onboarding and baseline profile capture.
+1. `begin` for onboarding and baseline profile capture.
 2. `ingest jd` for job description parsing and competency extraction.
 3. `tailor resume` for JD-aligned resume output with rationale and diff.
 4. `tailor cover` for a cover letter aligned to JD and resume evidence.
@@ -90,7 +90,7 @@ Risk and integrity checks:
 
 Mirror the existing repo pattern with command docs:
 
-1. `references/commands/kickoff.md`
+1. `references/commands/begin.md`
 2. `references/commands/ingest-jd.md`
 3. `references/commands/tailor-resume.md`
 4. `references/commands/tailor-cover.md`
